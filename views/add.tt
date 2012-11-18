@@ -1,0 +1,296 @@
+
+  		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span6" id="map_div" style="position: fixed;">
+
+      				<!-- Map container -->
+					<div class="row-fluid">
+						<div id="map">
+							<div class="alert alert-info">
+								<button type="button" class="close" data-dismiss="alert">×</button>
+								<strong>Loading map. Please wait..</strong>
+							</div>
+						</div>
+ 					</div>
+				</div>
+
+		    	<!-- Search Results -->
+    			<div class="span5" id="form_div">
+    				<form class="form-horizontal">
+						<div class="control-group">
+							<label class="control-label" for="type"><strong>I would like to</strong></label>
+							<div class="controls">
+								<select class="span7" id="type">
+		      						<option value="rent" selected="selected">Rent my apartment</option>
+		      						<option value="buy">Sell my apartment</option>
+		      						<option value="share">Share my apartment</option>
+		    					</select>
+		    				</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="address"><strong>Located Near</strong></label>
+							<div class="controls">
+								<input type="text" class="span10" id="address" placeholder="Enter society name or nearby landmark">
+								<input type="hidden" id="location">
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="bedrooms"><strong>With Bedrooms</strong></label>
+							<div class="controls">
+								<select class="span3" id="bedrooms">
+						        	<option value="1">1</option>
+							        <option value="2" selected="selected">2</option>
+							        <option value="3">3</option>
+							        <option value="4">4</option>
+							        <option value="4+">4+</option>
+	    						</select>
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="bathrooms"><strong>Bathrooms</strong></label>
+							<div class="controls">
+								<select class="span3" id="bathrooms">
+							        <option value="1">1</option>
+							        <option value="2" selected="selected">2</option>
+							        <option value="3">3</option>
+							        <option value="4">4</option>
+							        <option value="4+">4+</option>
+	    						</select>
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="area"><strong>Built-up area</strong></label>
+							<div class="controls">
+								<div class="input-append">
+									<input type="text" class="span6" id="area" placeholder="Ex. 1200">
+									<span class="add-on">Sq. Ft</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="amount"><strong>Amount</strong></label>
+							<div class="controls">
+								<div class="input-append">
+									<span class="add-on"><img src="images/rupee_symbol.png" alt="Rs."></span><input type="text" class="span6" id="amount" placeholder="Ex. 12000">
+								</div>
+							</div>
+						</div>
+							
+						<div class="control-group">
+							<label class="control-label" for="deposit"><strong>Deposit</strong></label>
+							<div class="controls">
+								<div class="input-prepend">
+									<span class="add-on"><img src="images/rupee_symbol.png" alt="Rs."></span><input type="text" class="span6" id="deposit" placeholder="Ex. 50000">
+								</div>
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="furnishing"><strong>Furnishing</strong></label>
+							<div class="controls">
+								<select class="span6" id="furnishing">
+									<option value="none" selected="selected">None</option>
+									<option value="semi">Semi-Furnished</option>
+									<option value="full">Fully-Furnished</option>
+								</select>
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label class="control-label" for="possession"><strong>Available from</strong></label>
+							<div class="controls">
+								<div class="input-append date" id="dp3" data-date="16-11-2012" data-date-format="dd-mm-yyyy">
+              						<input class="span6" size="16" type="text" value="16-11-2012" id="possession">
+              						<span class="add-on"><i class="icon-th"></i></span>
+            					</div>  
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="amenities"><strong>Amenities</strong></label>
+							<div class="controls">
+								<select class="span8" id="amenities">
+								        <option value="1">1</option>
+								        <option value="2" selected="selected">2</option>
+								        <option value="3">3</option>
+								        <option value="4">4</option>
+								        <option value="4+">4+</option>
+		    					</select>
+	    					</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="description"><strong>Additional details</strong></label>
+							<div class="controls">
+								<textarea class="span10" rows="4" id="description"></textarea>		
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label class="control-label" for="images"><strong>Images</strong></label>
+							<div class="controls">
+								<a id="images" href="#images" class="btn btn-small"><i class="icon-plus-sign"></i> Upload</a>
+	    					</div>
+						</div>
+
+<!-- 
+						<div class="control-group">
+							<div class="controls">
+								<a id="media" href="#media" class="btn btn-small btn-info">Upload Images</a>
+							</div>
+						</div>
+ -->
+						<div class="control-group">
+							<label class="control-label" for="bachlorsAllowed">
+								<strong>Bachlors allowed?</strong>
+							</label>
+							<div class="controls">
+								<label class="radio inline">
+  									<input type="radio" name="bachlorsAllowed" id="bachlorsYes" value="yes" checked> Yes
+								</label>
+								<label class="radio inline">
+  									<input type="radio" name="bachlorsAllowed" id="bachlorsNo" value="no"> No
+								</label>
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<div class="controls">
+								<a class="btn btn-primary" id="save"><strong>Save Details</strong></a>
+								<span id="status"></span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	<!-- Main content ends -->
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript">/* <![CDATA[ */
+			!window.jQuery && document.write('<script type="text/javascript" src="<% request.uri_base %>/javascripts/jquery.js"><\/script>')
+		/* ]]> */
+	</script>
+     <script type="text/javascript">
+
+    	var map;
+    	var marker;
+    	var infowindow;
+    	var geocoder;
+    	
+      	$(document).ready(function(){
+
+			$('#form_div').css("margin-left", $('#map_div').width()+10);
+			$('#dp3').datepicker();
+			$("#status").hide();
+	      	
+	      	var mapOptions = {
+	        	center: new google.maps.LatLng(18.5204303, 73.8567437),
+	        	zoom: 15,
+	        	mapTypeId: google.maps.MapTypeId.ROADMAP
+	      	};      
+	      	map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			
+	      	var placesoptions = {
+	      		// Restrict search to India
+	        	componentRestrictions: {country: 'IN'}
+	      	};
+	
+	      	var toinput = document.getElementById('address');
+	      	var toautocomplete = new google.maps.places.Autocomplete(toinput, placesoptions);
+	      	toautocomplete.setTypes(['geocode', 'establishment']);
+	      	toautocomplete.bindTo('bounds', map);
+	
+	      	marker = new google.maps.Marker({
+	        	map: map,
+	        	draggable: true,
+		    });
+	      	
+	      	var infowindow = new google.maps.InfoWindow();
+	      	geocoder = new google.maps.Geocoder();
+	
+	      	google.maps.event.addListener(toautocomplete, 'place_changed', function() {
+	      		
+	        	var place = toautocomplete.getPlace();
+	            map.setCenter(place.geometry.location);
+	            
+	            marker.setPosition(place.geometry.location);
+	            marker.setTitle("Some title");
+	            
+	            //infowindow.setContent('<strong>' + place.name + '</strong><br/><font size="1" color="grey">* drag marker to change location</font>');
+	            infowindow.setContent('<strong>' + place.name + '</strong><br/><p class="text-info">(drag marker to change location)</p>');
+	            infowindow.open(map, marker);
+	
+				map.setZoom(16);
+			});
+	        
+	        google.maps.event.addListener(marker, 'dragend', function() {
+	        	var newposition = marker.getPosition();
+	        	
+	        	geocoder.geocode({'latLng': newposition}, function(results, status) {
+	      			if (status == google.maps.GeocoderStatus.OK) {
+	        			if (results[1]) {
+	        				var content = '<strong>' + results[1].formatted_address + '</strong><br/><p class="text-info">(drag marker to change location)</p>';
+	          				infowindow.setContent(content);
+	          				map.setCenter(newposition);
+	          				$("#address").val(results[1].formatted_address);
+	          				//infowindow.open(map, marker);
+	        			}
+	      			} else {
+	        			alert("Geocoder failed due to: " + status);
+	      			}
+	    		});
+	        });
+	    });
+    
+	 	$(window).resize(function () {
+	    	var h = $(window).height(),
+	        offsetTop = 80; // Calculate the top offset
+	
+	    	$('#map').css('height', (h - offsetTop));
+		}).resize();
+		
+			$("#save").click(function() {
+    		
+    			$(this).addClass("disabled");
+    			
+      			var type = $("#type").val();
+      			var address = $("#address").val();
+      			var bedrooms = $("#bedrooms").val();
+      			var bathrooms = $("#bathrooms").val();
+      			var amount = $("#amount").val();
+      			var deposit = $("#deposit").val();
+      			var furnishing = $("#furnishing").val();
+      			var area = $("#area").val();
+      			var possession = $("#possession").val();
+      			var description = $("#description").val();
+      			var latlng = marker.getPosition();
+      			var location = "Point(" + latlng.lat() + " " + latlng.lng() + ")" 
+      			
+      			$("#status").addClass("label label-info");
+      			$("#status").text("Saving....");
+      			$("#status").show();
+      			
+      			
+      			var datastring = "type=" + type + "&address=" + address + "&bedrooms=" + bedrooms + "&bathrooms=" + bathrooms + "&amount=" + amount + "&deposit=" + deposit + "&furnishing=" + furnishing + "&area=" + area + "&possession=" + possession + "&location=" + location + "&description=" + description;
+      			
+     			$.ajax({
+    				type: "POST",
+    				url: "/apartment/save",
+    				data: datastring,
+    				success: function() {
+    					$("#status").hide();
+    					$("#save").removeClass("disabled");
+      				}
+  				});
+  			});
+  		
+    </script>
+
+  </body>
+</html>

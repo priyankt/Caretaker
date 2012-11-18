@@ -1,0 +1,72 @@
+
+<div class="container">
+<!--	
+
+	<header class="jumbotron subhead" id="overview">
+
+		<div class="hero-unit">
+			<h1>YouMovies</h1>
+			<p class="lead">Movies for the classes, not for the masses...</p>
+		</div>
+-->		
+
+			<div class="row">
+				<div class="hero-unit">
+					<h1>Caretaker</h1>
+					<p class="lead">
+						A unique platform where you can buy, sell and rent apartments based on location. You can even help others to find a suitable tenant or buyer for their apartment and make some extra money. Sounds interesting?
+					</p>
+					<p>
+						 <a  href="/register" class="btn btn-inverse">Register Now</a>
+					</p>
+				</div>
+
+			</div>
+	  
+			<div class="row">
+			
+				<div class="span6">
+						<h3>Want to Sell/Rent Your Apartment?</h3>
+						<p align="justify">
+							Do you own an apartment and looking for a trusted person to sell or rent your apartment?
+						</p>
+						<p align="justify">
+							 Look no more! Just login into Caretaker via your LinkedIn account, submit your apartment and contact details and that's it! Soon a reliable person will contact you whose details you can verify via LinkedIn. Its just that simple!
+						</p>
+						<a href="/search" class="btn btn-inverse"><i class="icon-user icon-white"></i> Sign-in via LinkedIn
+						</a>
+				</div>
+
+				<div class="span6">
+						<h3>Looking to Buy/Rent a New Apartment?</h3>
+						<p align="justify">
+						<ul>
+							<li>Got a new job and moving to a new city?</li>
+							<li>Looking for a bigger Apartment?</li>
+						</ul>
+						<p align="justify">Whatever be the reason, you just came to the right place. Search through all the apartments near your new office or preferred location published by the reliable people. You can also view your common LinkedIn connections and get recommendations. Isn't it great!!</p>
+						 <a href="/search" class="btn btn-inverse"><i class="icon-search icon-white"></i> Search Apartments</a>
+				</div>
+
+				
+			</div>
+			
+			<div class="row">
+				<div class="span6">
+					<h3>Are You a Reliable Real Estate Professional?</h3>
+					<p align="justify">Everyone will agree that it is hard to find a reliable real estate agent these days. Thus, if you are a reliable real estate agent who can add value to buyers/tenants with thier knowledge, then we are looking for you. Register with us and we will let you know whenever someone needs you.</p>
+						<!-- <a class="btn btn-primary" href="/login/google">Login via Google</a> -->
+					<a href="/registration/agent" class="btn btn-inverse"><i class="icon-pencil icon-white"></i> Agent Registration</a>
+				</div>
+				<div class="span6">
+					<h3>Looking for Extra Income to Supplement your Regular Job?</h3>
+					<p align="justify">We understand how hard it is to manage all the expenses in a regular salary and the need of extra income. Here at Caretaker, you can help others find tenants/buyers for their apartment and suppliment your salary with some extra income. If you think you can do it, then register with us as a caretaker and we will let you know whenever we need you. <a href="/details/caretaker">Learn more</a></p>
+						<!-- <a class="btn btn-primary" href="/login/google">Login via Google</a> -->
+					<a href="/registration/caretaker" class="btn btn-inverse"><i class="icon-pencil icon-white"></i> Caretaker Registration </a>
+				</div>
+
+			</div>
+			
+<!--	</header> -->
+	
+</div>
